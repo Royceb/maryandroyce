@@ -10,7 +10,7 @@ const Header = props => (
       <div className="inner">
         <h1>Mary & Royce</h1>
         <p>
-          June 18th, 2020
+          July 18, 2020
           <br></br>
           San Francisco, CA
           <br></br>
@@ -40,10 +40,10 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('work')
             }}
           >
-            Registry
+            Accommodations
           </button>
         </li>
         <li>
