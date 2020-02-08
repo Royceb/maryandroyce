@@ -3,6 +3,11 @@ import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import MapContainer from './MapContainer'
+
+const addressStyle = {
+  fontSize: '12px',
+}
 
 class Main extends React.Component {
   render() {
@@ -56,16 +61,30 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          id="accommodations"
+          className={`${
+            this.props.article === 'accommodations' ? 'active' : ''
+          } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Accommodations</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
+          <h3>Recommended Place of Stay:</h3>
+          <a href="https://www.hotelviasf.com">
+            <h2>
+              Hotel Via <br />{' '}
+              <span style={addressStyle}>
+                138 King St, San Francisco, CA 94107
+              </span>
+            </h2>
+          </a>
+          <img
+            width="500"
+            src="https://www.hotelviasf.com/wp-content/uploads/hotel-via-banner-image.jpg"
+          />
+          <MapContainer />
           <p>
             Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
             at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
