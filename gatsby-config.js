@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Mary and Royce',
+    title: '🎉 Mary and Royce 🎉',
     author: 'Royce Brooks',
     description: "Mary and Royce's wedding site",
   },
@@ -15,7 +15,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/fav.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',
