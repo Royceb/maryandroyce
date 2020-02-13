@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 import AboutUs from '../components/AboutUs'
+import AboutWedding from '../components/AboutWedding'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -110,7 +111,6 @@ class IndexPage extends React.Component {
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
-          <AboutUs timeout={this.state.timeout}></AboutUs>
         </div>
       </Layout>
     )

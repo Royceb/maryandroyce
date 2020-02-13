@@ -215,6 +215,7 @@
       width: 4.75rem;
       height: 4.75rem;
       line-height: 4.75rem;
+      color: #c0362c;
 
       .icon {
         &:before {
@@ -226,6 +227,9 @@
     .content {
       .inner {
         padding: 2.5rem 1rem;
+        h3 {
+          font-weight: normal;
+        }
       }
 
       p {
