@@ -25,6 +25,7 @@ const Header = props => (
               effect="verticalFadeIn"
               mode="smooth"
               effectDuration={0.5}
+              delay={1.5}
               interval={50}
             />
           </h1>
