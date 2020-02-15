@@ -70,14 +70,7 @@
 @media screen and (max-width: 600px) {
   #bg {
     &:after {
-      background-position-x: -300px;
-    }
-  }
-}
-@media screen and (max-width: 1000px) {
-  #bg {
-    &:after {
-      background-position-x: -600px;
+      background-position-x: -595px;
     }
   }
 }
