@@ -5,6 +5,13 @@ module.exports = {
     description: "Mary and Royce's wedding site",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-158379997-1',
+        head: true,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
