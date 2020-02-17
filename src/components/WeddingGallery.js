@@ -10,7 +10,6 @@ class WeddingGallery extends React.Component {
 
   render() {
     let randomPhotos = this.props.photos.sort(() => 0.5 - Math.random())
-    randomPhotos = randomPhotos.slice(0, (randomPhotos.length - 1) / 2)
     return (
       <div style={{ background: 'black' }}>
         <Gallery photos={randomPhotos} direction="column"></Gallery>
