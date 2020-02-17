@@ -19,18 +19,6 @@ const Header = props => (
     <nav>
       <ul>
         <li>
-          <h1 style={comingSoonStyle}>
-            <Wave
-              text="COMING SOON"
-              effect="verticalFadeIn"
-              mode="smooth"
-              effectDuration={0.5}
-              delay={1.5}
-              interval={50}
-            />
-          </h1>
-        </li>
-        {/* <li>
           <button
             onClick={() => {
               props.onOpenArticle('intro')
@@ -64,8 +52,8 @@ const Header = props => (
             }}
           >
             Contact
-          </button> 
-        </li> */}
+          </button>
+        </li>
       </ul>
     </nav>
   </header>

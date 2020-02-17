@@ -4,8 +4,7 @@ import Layout from '../components/layout'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
-import AboutUs from '../components/AboutUs'
-import AboutWedding from '../components/AboutWedding'
+import WeddingGallery from '../components/WeddingGallery'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -88,6 +87,17 @@ class IndexPage extends React.Component {
   }
 
   render() {
+    const photos = this.props.data.allContentfulAsset.nodes.reduce(
+      (photos, node) => {
+        photos = [].concat(...photos, {
+          src: `https:${node.file.url}`,
+          width: node.file.details.image.width,
+          height: node.file.details.image.height,
+        })
+        return photos
+      },
+      []
+    )
     return (
       <Layout location={this.props.location}>
         <div
@@ -111,10 +121,30 @@ class IndexPage extends React.Component {
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
+          <WeddingGallery photos={photos} />
         </div>
       </Layout>
     )
   }
 }
+
+export const query = graphql`
+  query allImages {
+    allContentfulAsset {
+      nodes {
+        file {
+          url
+          details {
+            size
+            image {
+              height
+              width
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
