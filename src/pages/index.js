@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 import WeddingGallery from '../components/WeddingGallery'
+import { graphql } from 'gatsby'
 
 class IndexPage extends React.Component {
   constructor(props) {
