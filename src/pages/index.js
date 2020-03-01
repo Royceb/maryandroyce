@@ -166,7 +166,9 @@ class IndexPage extends React.Component {
                 Invitations will be sent out in the next couple of months!
               </p>
 
-              <p>❤️ Mary and Royce</p>
+              <p>
+                <span>❤️</span> Mary and Royce
+              </p>
             </div>
             <Footer footerText float timeout={this.state.timeout} />
           </div>

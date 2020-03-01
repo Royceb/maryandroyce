@@ -3,6 +3,8 @@ import React from 'react'
 import pic01 from '../images/pic01_2.png'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import paypal from '../images/paypal.png'
+import amazon from '../images/amazon.png'
 import MapContainer from './MapContainer'
 import WeddingGallery from './WeddingGallery'
 
@@ -225,6 +227,74 @@ class Main extends React.Component {
             Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
             amet.
           </p>
+          {close}
+        </article>
+
+        <article
+          id="gifts"
+          className={`${this.props.article === 'gifts' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Gifts</h2>
+          <h3>
+            Your presence at our wedding is a gift enough but if you wish to buy
+            us something, a monetary gift or gift card will be greatly
+            appreciated.
+          </h3>
+
+          <p>
+            For your convenience, you can use the buttons below to quickly send
+            a gift to us!
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+            }}
+          >
+            <a
+              style={{
+                margin: '10px',
+                cursor: 'pointer',
+                border: 'none',
+              }}
+              target="_blank"
+              href="https://paypal.me/maryandroyce"
+            >
+              <img style={{ width: '16rem' }} src={paypal} />
+            </a>
+            <a
+              style={{
+                margin: '10px',
+                cursor: 'pointer',
+                border: 'none',
+              }}
+              target="_blank"
+              href="https://www.amazon.com/gift-cards"
+            >
+              <img style={{ width: '16rem' }} src={amazon} />
+            </a>
+          </div>
+          <br />
+
+          <p style={{ textAlign: 'center' }}>
+            <a>
+              Mary Aboudi & Royce Brooks <br /> 8151 Carlise Way <br /> Vallejo
+              CA, 94591
+            </a>
+            <br />
+            <br />
+            <a>aboudibrooks@gmail.com</a>
+          </p>
+          <h4 style={{ textAlign: 'center' }}>
+            Thank you <span>❤️</span>
+          </h4>
+
           {close}
         </article>
 
