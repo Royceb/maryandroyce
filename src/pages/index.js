@@ -4,7 +4,6 @@ import Layout from '../components/layout'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
-import WeddingGallery from '../components/WeddingGallery'
 import { graphql } from 'gatsby'
 
 class IndexPage extends React.Component {
@@ -99,6 +98,10 @@ class IndexPage extends React.Component {
       },
       []
     )
+
+    const randomPhotos = photos
+      .sort(() => 0.5 - Math.random())
+      .slice(0, (photos.length - 1) / 2)
     return (
       <Layout location={this.props.location}>
         <div
@@ -112,6 +115,7 @@ class IndexPage extends React.Component {
               timeout={this.state.timeout}
             />
             <Main
+              photos={randomPhotos}
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
@@ -122,7 +126,34 @@ class IndexPage extends React.Component {
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
-          <WeddingGallery photos={photos} />
+          <div style={{ background: '#1b1f22', padding: '50px' }}>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'column',
+                maxWidth: '700px',
+                margin: '0 auto',
+              }}
+            >
+              <h3>
+                Welcome to our wedding website, we can't wait to celebrate our
+                special day with you!
+              </h3>
+              <p>
+                We've created this website as a convenient and interactive way
+                to share all of the important details with you in the lead up to
+                our wedding.
+                <br />
+                <br />
+                Invitations will be sent out in the next couple of months!
+              </p>
+
+              <p>❤️ Mary and Royce</p>
+            </div>
+            <Footer footerText float timeout={this.state.timeout} />
+          </div>
         </div>
       </Layout>
     )

@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Wave } from 'react-animated-text'
+import moment from 'moment'
 
-const comingSoonStyle = { margin: 0, padding: '20px' }
+const daysRemaining = function() {
+  var weddingDate = moment('2020-07-18')
+  var today = moment()
+  return weddingDate.diff(today, 'days')
+}
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -14,6 +18,7 @@ const Header = props => (
         <h1>Mary & Royce</h1>
         <h3>July 18, 2020</h3>
         <h3>San Francisco, CA</h3>
+        <h3>{daysRemaining()} days to go!</h3>
       </div>
     </div>
     <nav>
@@ -25,6 +30,15 @@ const Header = props => (
             }}
           >
             Our story
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('gallery')
+            }}
+          >
+            Gallery
           </button>
         </li>
         <li>

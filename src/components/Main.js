@@ -4,6 +4,7 @@ import pic01 from '../images/pic01_2.png'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 import MapContainer from './MapContainer'
+import WeddingGallery from './WeddingGallery'
 
 const addressStyle = {
   fontSize: '12px',
@@ -33,9 +34,13 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Our Story</h2>
+          <h3 style={{ textAlign: 'center' }}>October 31, 2005</h3>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/5Ruba317PHG79t4E9mjVrS/3a2815024bff3527dd3835102365c030/IMG_9779.jpg"
+              alt=""
+            />
           </span>
           <p>
             Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
@@ -57,6 +62,103 @@ class Main extends React.Component {
             placerat maximus. Pellentesque aliquam maximus risus, vel sed
             vehicula.
           </p>
+
+          <h3 style={{ textAlign: 'center' }}>October 31, 2005</h3>
+          <span className="image main">
+            <img
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/5Ruba317PHG79t4E9mjVrS/3a2815024bff3527dd3835102365c030/IMG_9779.jpg"
+              alt=""
+            />
+          </span>
+          <p>
+            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
+            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
+            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
+            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
+            By the way, check out my <a href="#work">awesome work</a>.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+            libero eu nibh porttitor fermentum. Nullam venenatis erat id
+            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
+            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
+            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
+            lectus. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. In non lorem sit amet elit
+            placerat maximus. Pellentesque aliquam maximus risus, vel sed
+            vehicula.
+          </p>
+
+          <h3 style={{ textAlign: 'center' }}>October 31, 2005</h3>
+          <span className="image main">
+            <img
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/5Ruba317PHG79t4E9mjVrS/3a2815024bff3527dd3835102365c030/IMG_9779.jpg"
+              alt=""
+            />
+          </span>
+          <p>
+            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
+            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
+            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
+            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
+            By the way, check out my <a href="#work">awesome work</a>.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+            libero eu nibh porttitor fermentum. Nullam venenatis erat id
+            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
+            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
+            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
+            lectus. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. In non lorem sit amet elit
+            placerat maximus. Pellentesque aliquam maximus risus, vel sed
+            vehicula.
+          </p>
+
+          <h3 style={{ textAlign: 'center' }}>October 31, 2005</h3>
+          <span className="image main">
+            <img
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/5Ruba317PHG79t4E9mjVrS/3a2815024bff3527dd3835102365c030/IMG_9779.jpg"
+              alt=""
+            />
+          </span>
+          <p>
+            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
+            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
+            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
+            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
+            By the way, check out my <a href="#work">awesome work</a>.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+            libero eu nibh porttitor fermentum. Nullam venenatis erat id
+            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
+            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
+            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
+            lectus. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. In non lorem sit amet elit
+            placerat maximus. Pellentesque aliquam maximus risus, vel sed
+            vehicula.
+          </p>
+          {close}
+        </article>
+
+        {/* Gallery */}
+        <article
+          id="gallery"
+          className={`${this.props.article === 'gallery' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Gallery</h2>
+          <WeddingGallery photos={this.props.photos} />
           {close}
         </article>
 
@@ -156,18 +258,7 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
-          <ul className="icons">
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-          </ul>
+
           {close}
         </article>
       </div>
