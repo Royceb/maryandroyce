@@ -6,6 +6,7 @@ import Main from '../components/Main'
 import Footer from '../components/Footer'
 import { graphql } from 'gatsby'
 
+let PHOTOS_CACHE = []
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -62,11 +63,13 @@ class IndexPage extends React.Component {
   handleCloseArticle() {
     this.setState({
       articleTimeout: !this.state.articleTimeout,
+      photos: PHOTOS_CACHE,
     })
 
     setTimeout(() => {
       this.setState({
         timeout: !this.state.timeout,
+        photos: PHOTOS_CACHE,
       })
     }, 325)
 
@@ -74,6 +77,7 @@ class IndexPage extends React.Component {
       this.setState({
         isArticleVisible: !this.state.isArticleVisible,
         article: '',
+        photos: PHOTOS_CACHE,
       })
     }, 350)
   }
@@ -86,8 +90,8 @@ class IndexPage extends React.Component {
     }
   }
 
-  render() {
-    const photos = this.props.data.allContentfulAsset.nodes.reduce(
+  getPhotos() {
+    let photos = this.props.data.allContentfulAsset.nodes.reduce(
       (photos, node) => {
         photos = [].concat(...photos, {
           src: `https:${node.file.url}`,
@@ -99,9 +103,21 @@ class IndexPage extends React.Component {
       []
     )
 
-    const randomPhotos = photos
+    photos = PHOTOS_CACHE = photos
       .sort(() => 0.5 - Math.random())
       .slice(0, (photos.length - 1) / 2)
+
+    return photos
+  }
+
+  render() {
+    let photos = []
+    if (!this.state.photos) {
+      photos = this.getPhotos()
+    } else {
+      photos = this.state.photos
+    }
+
     return (
       <Layout location={this.props.location}>
         <div
@@ -115,7 +131,7 @@ class IndexPage extends React.Component {
               timeout={this.state.timeout}
             />
             <Main
-              photos={randomPhotos}
+              photos={photos}
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
