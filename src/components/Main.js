@@ -7,7 +7,6 @@ import paypal from '../images/paypal.png'
 import amazon from '../images/amazon.png'
 import MapContainer from './MapContainer'
 import WeddingGallery from './WeddingGallery'
-import Helmet from 'react-helmet'
 
 const addressStyle = {
   fontSize: '12px',
@@ -30,12 +29,6 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-        <Helmet>
-          <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no"
-          ></meta>
-        </Helmet>
         <article
           id="intro"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
