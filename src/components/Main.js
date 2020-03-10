@@ -7,6 +7,7 @@ import paypal from '../images/paypal.png'
 import amazon from '../images/amazon.png'
 import MapContainer from './MapContainer'
 import WeddingGallery from './WeddingGallery'
+import Helmet from 'react-helmet'
 
 const addressStyle = {
   fontSize: '12px',
@@ -29,6 +30,12 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
+        <Helmet>
+          <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no"
+          ></meta>
+        </Helmet>
         <article
           id="intro"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
@@ -73,20 +80,20 @@ class Main extends React.Component {
             from each other.
           </p>
 
-          <h3 style={{ textAlign: 'center' }}>May 8, 2015</h3>
+          <h3 style={{ textAlign: 'center' }}>June 7, 2016 </h3>
           <span className="image main">
             <img
-              src="https://images.ctfassets.net/tpdbsmpvmn6p/P5YNT8a17P4FhOWHDZzi9/79c90ab5e2d8899999bcbf4d363a86d2/IMG_0086.jpg  "
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/6hS4UoTYSJEyZFx2hT72j3/10c3eb6cab112a1e200bcfebfcf4bcad/IMG_6998.JPG"
               alt=""
             />
           </span>
           <p>
-            One day, while Royce was on his way to class via the
+            One day, while Royce was on his way to class via the{' '}
             <a href="https://www.google.com/maps/place/Sunset+Blvd+%26+Taraval+St/@37.742108,-122.49435,15z/data=!4m2!3m1!1s0x0:0x999132b9c4e40fd6?sa=X&ved=2ahUKEwjxqevd2o7oAhUJ7J4KHU_bBNsQ_BIwEnoECBMQCA">
               29 bus on Sunset and Taraval
             </a>
             , he saw Mary on the bus. This was a huge surprise to Royce because
-            he has taken this bus for years and had no idea Mary was now living
+            he had taken this bus for years and had no idea Mary was now living
             in San Francisco. From there, our bond brought us back into each
             other's lives. All of a sudden we were two best friends trying to
             reach the next milestone in life, again, but this time, we fell in
