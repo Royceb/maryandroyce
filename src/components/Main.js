@@ -47,8 +47,8 @@ class Main extends React.Component {
           <p>
             We met in 6th grade at Springstowne Middle School where we developed
             a special and genuine friendship that we both knew would last a
-            lifetime. Growing up together in Vallejo, we were both parts of,
-            sometimes interweaving, groups of close-knit friends, but our
+            lifetime. Growing up together in Vallejo we both were fortunate
+            enough to have diverse groups of close-knit friends, but our
             friendship was always something that stood out from the rest.
           </p>
           <h3 style={{ textAlign: 'center' }}>April 15, 2010</h3>
@@ -59,17 +59,17 @@ class Main extends React.Component {
             />
           </span>
           <p>
-            We graduated middle and high school, where we had many classes
-            together and were able to strengthen our friendship. We both
-            supported eachother in all aspects of life, whether it was sports,
-            school, family, relationships, just about anything.
+            We graduated from middle and high school and had many classes
+            together. This gave us time to strengthen our friendship even more.
+            We both supported each other in all aspects of life, whether it was
+            sports, school, family, relationships, just about anything.
           </p>
 
           <p>
-            After we graduated highschool, like many friends, we parted ways.
-            Mary went to U.C. Santa Barbra and Royce went to San Francisco
+            After we graduated high school, like many friends, we parted ways.
+            Mary went to U.C. Santa Barbara and Royce went to San Francisco
             State. We stayed in touch, but not nearly as much as we did growing
-            up. Sometimes, months would pass without either one of us hearing
+            up. Sometimes months would pass without either one of us hearing
             from each other.
           </p>
 
@@ -81,16 +81,16 @@ class Main extends React.Component {
             />
           </span>
           <p>
-            One day, while Royce was on his way to class via the{' '}
+            One day, while Royce was on his way to class via the
             <a href="https://www.google.com/maps/place/Sunset+Blvd+%26+Taraval+St/@37.742108,-122.49435,15z/data=!4m2!3m1!1s0x0:0x999132b9c4e40fd6?sa=X&ved=2ahUKEwjxqevd2o7oAhUJ7J4KHU_bBNsQ_BIwEnoECBMQCA">
               29 bus on Sunset and Taraval
             </a>
             , he saw Mary on the bus. This was a huge surprise to Royce because
             he has taken this bus for years and had no idea Mary was now living
-            in San Francisco. From there, our friendship brought us back into
-            each others lives. All of the sudden, we were just two really good
-            friends trying to reach the next milestone in life but this time, we
-            fell in love.
+            in San Francisco. From there, our bond brought us back into each
+            other's lives. All of a sudden we were two best friends trying to
+            reach the next milestone in life, again, but this time, we fell in
+            love.
           </p>
           <h3 style={{ textAlign: 'center' }}>July 31, 2019</h3>
           <span className="image main">
@@ -100,9 +100,9 @@ class Main extends React.Component {
             />
           </span>
           <p>
-            We both loved and supported each other while we watched each other
-            graduated college, get our first job, move into our first apartment,
-            and eventually buy our first house.
+            We watched each other graduate college, get our first jobs, move
+            into our first apartment together, and eventually buy our first
+            home.
           </p>
 
           <h3 style={{ textAlign: 'center' }}>December 23, 2019</h3>
@@ -113,8 +113,8 @@ class Main extends React.Component {
             />
           </span>
           <p>
-            We went to Austin, Texas for a Christmas vacation, and Royce
-            proposed to Mary at the Trial of Lights.
+            We went to Austin, Texas for a Christmas vacation and Royce proposed
+            to Mary at the Trail of Lights. She said yes!
           </p>
           {close}
         </article>

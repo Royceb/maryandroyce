@@ -71,12 +71,8 @@ const Header = props => (
           </button>
         </li>
         <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
-            Contact
+          <button>
+            <a href="mailto:aboudibrooks@gmail.com">Contact</a>
           </button>
         </li>
       </ul>
