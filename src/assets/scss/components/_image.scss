@@ -60,7 +60,8 @@
   &.main {
     display: block;
     margin: (_size(element-margin) * 1.25) 0;
-    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
 
     img {
       width: 100%;
