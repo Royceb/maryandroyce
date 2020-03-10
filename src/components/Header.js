@@ -52,6 +52,7 @@ const Header = props => (
         </li>
         <li>
           <button
+            disabled
             onClick={() => {
               props.onOpenArticle('work')
             }}
@@ -61,6 +62,7 @@ const Header = props => (
         </li>
         <li>
           <button
+            disabled
             onClick={() => {
               props.onOpenArticle('accommodations')
             }}

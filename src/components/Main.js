@@ -45,108 +45,76 @@ class Main extends React.Component {
             />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            We met in 6th grade at Springstowne Middle School where we developed
+            a special and genuine friendship that we both knew would last a
+            lifetime. Growing up together in Vallejo, we were both parts of,
+            sometimes interweaving, groups of close-knit friends, but our
+            friendship was always something that stood out from the rest.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
-
-          <h3 style={{ textAlign: 'center' }}>October 31, 2005</h3>
+          <h3 style={{ textAlign: 'center' }}>April 15, 2010</h3>
           <span className="image main">
             <img
-              src="https://images.ctfassets.net/tpdbsmpvmn6p/5Ruba317PHG79t4E9mjVrS/3a2815024bff3527dd3835102365c030/IMG_9779.jpg"
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/3z9XpbHtviqbjsvxF3hoJY/4edb7f36023724a42367064b42e0ae93/IMG_9778_2.jpg"
               alt=""
             />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            We graduated middle and high school, where we had many classes
+            together and were able to strengthen our friendship. We both
+            supported eachother in all aspects of life, whether it was sports,
+            school, family, relationships, just about anything.
           </p>
 
-          <h3 style={{ textAlign: 'center' }}>October 31, 2005</h3>
+          <p>
+            After we graduated highschool, like many friends, we parted ways.
+            Mary went to U.C. Santa Barbra and Royce went to San Francisco
+            State. We stayed in touch, but not nearly as much as we did growing
+            up. Sometimes, months would pass without either one of us hearing
+            from each other.
+          </p>
+
+          <h3 style={{ textAlign: 'center' }}>May 8, 2015</h3>
           <span className="image main">
             <img
-              src="https://images.ctfassets.net/tpdbsmpvmn6p/5Ruba317PHG79t4E9mjVrS/3a2815024bff3527dd3835102365c030/IMG_9779.jpg"
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/P5YNT8a17P4FhOWHDZzi9/79c90ab5e2d8899999bcbf4d363a86d2/IMG_0086.jpg  "
               alt=""
             />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            One day, while Royce was on his way to class via the{' '}
+            <a href="https://www.google.com/maps/place/Sunset+Blvd+%26+Taraval+St/@37.742108,-122.49435,15z/data=!4m2!3m1!1s0x0:0x999132b9c4e40fd6?sa=X&ved=2ahUKEwjxqevd2o7oAhUJ7J4KHU_bBNsQ_BIwEnoECBMQCA">
+              29 bus on Sunset and Taraval
+            </a>
+            , he saw Mary on the bus. This was a huge surprise to Royce because
+            he has taken this bus for years and had no idea Mary was now living
+            in San Francisco. From there, our friendship brought us back into
+            each others lives. All of the sudden, we were just two really good
+            friends trying to reach the next milestone in life but this time, we
+            fell in love.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
-
-          <h3 style={{ textAlign: 'center' }}>October 31, 2005</h3>
+          <h3 style={{ textAlign: 'center' }}>July 31, 2019</h3>
           <span className="image main">
             <img
-              src="https://images.ctfassets.net/tpdbsmpvmn6p/5Ruba317PHG79t4E9mjVrS/3a2815024bff3527dd3835102365c030/IMG_9779.jpg"
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/2v3h7JNrMCDpbjwnRK6O4h/5ce7b28b76e9e0459cd9cae9a3bfa682/IMG_7469.jpg"
               alt=""
             />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            We both loved and supported each other while we watched each other
+            graduated college, get our first job, move into our first apartment,
+            and eventually buy our first house.
           </p>
+
+          <h3 style={{ textAlign: 'center' }}>December 23, 2019</h3>
+          <span className="image main">
+            <img
+              src="https://images.ctfassets.net/tpdbsmpvmn6p/1dliSAQSwe7DAvxHSYxxlK/146b32dca9efb33c36fe880f21d9239a/IMG_3345.jpg"
+              alt=""
+            />
+          </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            We went to Austin, Texas for a Christmas vacation, and Royce
+            proposed to Mary at the Trial of Lights.
           </p>
           {close}
         </article>
