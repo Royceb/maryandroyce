@@ -41,7 +41,7 @@ const Header = props => (
             Gallery
           </button>
         </li>
-        <li>
+        {/* <li>
           <button
             onClick={() => {
               props.onOpenArticle('gifts')
@@ -49,7 +49,7 @@ const Header = props => (
           >
             Gifts
           </button>
-        </li>
+        </li> */}
         <li>
           <button
             disabled
