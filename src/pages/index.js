@@ -28,6 +28,21 @@ class IndexPage extends React.Component {
       this.setState({ loading: '' })
     }, 100)
     document.addEventListener('mousedown', this.handleClickOutside)
+
+    document.addEventListener('gesturestart', function(e) {
+      e.preventDefault()
+      document.body.style.zoom = 0.99
+    })
+
+    document.addEventListener('gesturechange', function(e) {
+      e.preventDefault()
+
+      document.body.style.zoom = 0.99
+    })
+    document.addEventListener('gestureend', function(e) {
+      e.preventDefault()
+      document.body.style.zoom = 1
+    })
   }
 
   componentWillUnmount() {
