@@ -1,6 +1,6 @@
 import styles from '../assets/scss/components/countdown.scss'
 import React from 'react'
-const WEDDING_DATE = new Date('07/18/2020')
+const WEDDING_DATE = new Date('11/22/2020')
 
 const Countdown = () => {
   const now = new Date()
