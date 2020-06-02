@@ -3,7 +3,7 @@ import React from 'react'
 import moment from 'moment'
 
 const daysRemaining = function() {
-  var weddingDate = moment('2020-07-18')
+  var weddingDate = moment('2020-11-22')
   var today = moment()
   return weddingDate.diff(today, 'days')
 }
