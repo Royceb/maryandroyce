@@ -16,7 +16,7 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Mary & Royce</h1>
-        <h3>July 18, 2020</h3>
+        <h3>November 22nd, 2020</h3>
         <h3>San Francisco, CA</h3>
         <h3>{daysRemaining()} days to go!</h3>
       </div>
