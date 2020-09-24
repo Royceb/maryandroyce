@@ -145,39 +145,41 @@ class IndexPage extends React.Component {
     }
 
     return (
-      <Layout location={this.props.location}>
-        <div
-          className={`body ${this.state.loading} ${
-            this.state.isArticleVisible ? 'is-article-visible' : ''
-          }`}
-        >
-          <div id="wrapper">
-            <Header
-              onOpenArticle={this.handleOpenArticle}
-              timeout={this.state.timeout}
-            />
-            <Main
-              photos={photos}
-              isArticleVisible={this.state.isArticleVisible}
-              timeout={this.state.timeout}
-              toggleRunConfetti={this.toggleRunConfetti}
-              onOpenArticle={this.handleOpenArticle}
-              articleTimeout={this.state.articleTimeout}
-              article={this.state.article}
-              onCloseArticle={this.handleCloseArticle}
-              setWrapperRef={this.setWrapperRef}
-            />
-            <Footer timeout={this.state.timeout} />
-          </div>
-          <div id="bg"></div>
-        </div>
+      <>
         <Confetti
           width={this.state.innerWidth}
           height={this.state.innerHeight}
           run={this.state.runConfetti}
           colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
         />
-      </Layout>
+        <Layout location={this.props.location}>
+          <div
+            className={`body ${this.state.loading} ${
+              this.state.isArticleVisible ? 'is-article-visible' : ''
+            }`}
+          >
+            <div id="wrapper">
+              <Header
+                onOpenArticle={this.handleOpenArticle}
+                timeout={this.state.timeout}
+              />
+              <Main
+                photos={photos}
+                isArticleVisible={this.state.isArticleVisible}
+                timeout={this.state.timeout}
+                toggleRunConfetti={this.toggleRunConfetti}
+                onOpenArticle={this.handleOpenArticle}
+                articleTimeout={this.state.articleTimeout}
+                article={this.state.article}
+                onCloseArticle={this.handleCloseArticle}
+                setWrapperRef={this.setWrapperRef}
+              />
+              <Footer timeout={this.state.timeout} />
+            </div>
+            <div id="bg"></div>
+          </div>
+        </Layout>
+      </>
     )
   }
 }
