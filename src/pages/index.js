@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
       articleTimeout: false,
       article: '',
       loading: 'is-loading',
-      runConfetti: true,
+      runConfetti: false,
     }
 
     if (typeof window !== 'undefined') {
