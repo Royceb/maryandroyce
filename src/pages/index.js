@@ -148,6 +148,10 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
+            <Confetti
+              run={true}
+              colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
+            />
             <Header
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
@@ -167,10 +171,6 @@ class IndexPage extends React.Component {
           </div>
           <div id="bg"></div>
         </div>
-        <Confetti
-          run={this.state.runConfetti}
-          colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
-        />
       </Layout>
     )
   }
