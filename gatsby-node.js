@@ -4,4 +4,15 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+exports.onCreatePage = async ({ page, actions }) => {
+  const path = require('path')
+  const { createPage } = actions
+  createPage({
+    path: `/rsvp`,
+    component: path.resolve(`./src/pages/index.js`),
+  })
+  createPage({
+    path: `/virtualrsvp`,
+    component: path.resolve(`./src/pages/index.js`),
+  })
+}
