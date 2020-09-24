@@ -17,7 +17,9 @@ class IndexPage extends React.Component {
       articleTimeout: false,
       article: '',
       loading: 'is-loading',
-      runConfetti: false,
+      runConfetti: true,
+      width: window.innerWidth,
+      height: window.innerHeight,
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
@@ -168,6 +170,8 @@ class IndexPage extends React.Component {
           <div id="bg"></div>
         </div>
         <Confetti
+          width={this.state.innerWidth}
+          height={this.state.innerHeight}
           run={this.state.runConfetti}
           colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
         />
