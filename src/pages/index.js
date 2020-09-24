@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
       articleTimeout: false,
       article: '',
       loading: 'is-loading',
-      runConfetti: true,
+      runConfetti: false,
     }
 
     if (typeof window !== 'undefined') {
@@ -71,6 +71,11 @@ class IndexPage extends React.Component {
   }
 
   toggleRunConfetti() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight })
+    this._toggleRunConfetti()
+  }
+
+  _toggleRunConfetti() {
     this.setState({ runConfetti: !this.state.runConfetti })
   }
 
@@ -178,13 +183,14 @@ class IndexPage extends React.Component {
           </div>
           <div id="bg"></div>
         </div>
-        <Confetti
-          style={{ width: '100%', height: '100%' }}
-          width={this.state.innerHeight}
-          width={this.state.innerWidth}
-          run={this.state.runConfetti}
-          colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
-        />
+        {this.state.runConfetti && (
+          <Confetti
+            height={this.state.innerHeight}
+            width={this.state.innerWidth}
+            run={this.state.runConfetti}
+            colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
+          />
+        )}
       </Layout>
     )
   }
