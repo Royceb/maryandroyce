@@ -33,6 +33,7 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
+    console.log(window.innerWidth, window.innerHeight)
     if (typeof window !== 'undefined') {
       this.setState({ width: window.innerWidth, height: window.innerHeight })
     }
@@ -178,7 +179,7 @@ class IndexPage extends React.Component {
           <div id="bg"></div>
         </div>
         <Confetti
-          style={{ width: '100%' }}
+          style={{ width: '100%', height: '100%' }}
           width={this.state.innerHeight}
           width={this.state.innerWidth}
           run={this.state.runConfetti}
