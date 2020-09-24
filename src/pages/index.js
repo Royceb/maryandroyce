@@ -180,7 +180,7 @@ class IndexPage extends React.Component {
         </div>
         <Confetti
           style={{ width: '100%', height: '100%' }}
-          height={this.state.innerHeight}
+          width={this.state.innerHeight}
           width={this.state.innerWidth}
           run={this.state.runConfetti}
           colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
