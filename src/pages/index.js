@@ -19,6 +19,12 @@ class IndexPage extends React.Component {
       loading: 'is-loading',
       runConfetti: true,
     }
+
+    if (typeof window !== 'undefined') {
+      this.state.width = window.innerWidth
+      this.state.height = window.innerHeight
+    }
+
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
     this.setWrapperRef = this.setWrapperRef.bind(this)
@@ -27,6 +33,10 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
+    if (typeof window !== 'undefined') {
+      this.setState({ width: window.innerWidth, height: window.innerHeight })
+    }
+
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
@@ -148,10 +158,6 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
-            <Confetti
-              run={true}
-              colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
-            />
             <Header
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
@@ -171,6 +177,12 @@ class IndexPage extends React.Component {
           </div>
           <div id="bg"></div>
         </div>
+        <Confetti
+          width={this.state.innerHeight}
+          width={this.state.innerWidth}
+          run={this.state.runConfetti}
+          colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
+        />
       </Layout>
     )
   }
