@@ -178,6 +178,7 @@ class IndexPage extends React.Component {
           <div id="bg"></div>
         </div>
         <Confetti
+          style={{ width: '100%' }}
           width={this.state.innerHeight}
           width={this.state.innerWidth}
           run={this.state.runConfetti}
