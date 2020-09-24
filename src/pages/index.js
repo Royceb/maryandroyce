@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 import { graphql } from 'gatsby'
+import Confetti from 'react-confetti'
 
 let PHOTOS_CACHE = []
 class IndexPage extends React.Component {
@@ -16,14 +17,27 @@ class IndexPage extends React.Component {
       articleTimeout: false,
       article: '',
       loading: 'is-loading',
+      runConfetti: false,
     }
+
+    if (typeof window !== 'undefined') {
+      this.state.width = window.innerWidth
+      this.state.height = window.innerHeight
+    }
+
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
     this.setWrapperRef = this.setWrapperRef.bind(this)
     this.handleClickOutside = this.handleClickOutside.bind(this)
+    this.toggleRunConfetti = this.toggleRunConfetti.bind(this)
   }
 
   componentDidMount() {
+    console.log(window.innerWidth, window.innerHeight)
+    if (typeof window !== 'undefined') {
+      this.setState({ width: window.innerWidth, height: window.innerHeight })
+    }
+
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
@@ -54,6 +68,15 @@ class IndexPage extends React.Component {
 
   setWrapperRef(node) {
     this.wrapperRef = node
+  }
+
+  toggleRunConfetti() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight })
+    this._toggleRunConfetti()
+  }
+
+  _toggleRunConfetti() {
+    this.setState({ runConfetti: !this.state.runConfetti })
   }
 
   handleOpenArticle(article) {
@@ -149,6 +172,8 @@ class IndexPage extends React.Component {
               photos={photos}
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
+              toggleRunConfetti={this.toggleRunConfetti}
+              onOpenArticle={this.handleOpenArticle}
               articleTimeout={this.state.articleTimeout}
               article={this.state.article}
               onCloseArticle={this.handleCloseArticle}
@@ -157,37 +182,22 @@ class IndexPage extends React.Component {
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
-          <div style={{ background: '#1b1f22', padding: '50px' }}>
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                flexDirection: 'column',
-                maxWidth: '700px',
-                margin: '0 auto',
-              }}
-            >
-              <h3>
-                Welcome to our wedding website, we can't wait to celebrate our
-                special day with you!
-              </h3>
-              <p>
-                We've created this website as a convenient and interactive way
-                to share all of the important details with you in the lead up to
-                our wedding.
-                <br />
-                <br />
-                Invitations will be sent out in the next couple of months!
-              </p>
-
-              <p>
-                <span>❤️</span> Mary and Royce
-              </p>
-            </div>
-            <Footer footerText float timeout={this.state.timeout} />
-          </div>
         </div>
+        {this.state.runConfetti && (
+          <Confetti
+            height={this.state.innerHeight}
+            width={this.state.innerWidth}
+            run={this.state.runConfetti}
+            colors={[
+              '#232526',
+              '#414345',
+              '#fafafa',
+              '#434343',
+              '#4b7c95',
+              '#173f24',
+            ]}
+          />
+        )}
       </Layout>
     )
   }
