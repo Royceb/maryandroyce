@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
       articleTimeout: false,
       article: '',
       loading: 'is-loading',
-      runConfetti: false,
+      runConfetti: true,
     }
 
     if (typeof window !== 'undefined') {
@@ -188,7 +188,14 @@ class IndexPage extends React.Component {
             height={this.state.innerHeight}
             width={this.state.innerWidth}
             run={this.state.runConfetti}
-            colors={['#232526', '#414345', '#fafafa', '#434343', '#4b7c95']}
+            colors={[
+              '#232526',
+              '#414345',
+              '#fafafa',
+              '#434343',
+              '#4b7c95',
+              '#173f24',
+            ]}
           />
         )}
       </Layout>
