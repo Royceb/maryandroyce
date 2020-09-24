@@ -18,8 +18,8 @@ class IndexPage extends React.Component {
       article: '',
       loading: 'is-loading',
       runConfetti: true,
-      width: window.innerWidth,
-      height: window.innerHeight,
+      width: null,
+      height: null,
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
@@ -48,6 +48,8 @@ class IndexPage extends React.Component {
       e.preventDefault()
       document.body.style.zoom = 1
     })
+
+    this.setState({ width: window.innerWidth, height: window.innerHeight })
   }
 
   componentWillUnmount() {
