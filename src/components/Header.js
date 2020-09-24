@@ -33,7 +33,7 @@ const Header = props => {
               Our story
             </button>
           </li>
-          <li>
+          {/* <li>
             <button
               onClick={() => {
                 props.onOpenArticle('gallery')
@@ -41,7 +41,7 @@ const Header = props => {
             >
               Gallery
             </button>
-          </li>
+          </li> */}
           <li>
             <button
               onClick={() => {
